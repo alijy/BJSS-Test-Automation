@@ -11,14 +11,17 @@ class DynamicLoadingPage
     click_on(EXAMPLE_2_LINK)
   end
 
+
   def clickStart
     click_on(START_BUTTON)
     sleep 3
   end
 
+
   def isHelloWorldRendered?
     isPresent?(FINISH_ID)
   end
+
 
   def isPresent?(element)
     timer = 3

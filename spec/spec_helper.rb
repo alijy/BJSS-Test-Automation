@@ -1,6 +1,7 @@
 require 'capybara'
 require 'capybara/dsl'
 require 'httparty'
+require 'json'
 require_relative '../lib/the_internet_site'
 require_relative '../lib/dummy_restapi_site'
 

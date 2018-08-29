@@ -11,13 +11,19 @@ class DummyRestApiSite
   end
 
   def addEmployee(name, salary, age)
-    options = { :body => { :name => name, :salary => salary, :age => age }.to_json}
+    # options = { :body => { :name => name, :salary => salary, :age => age }.to_json}
+    options = { "body": { "name": name, "salary": salary, "age": age }.to_json}
     @response = HTTParty.post(CREATE_URL, options)
-    puts @response
   end
 
-  def verifyResponse
-    page.has_content?(`"employee_name":"#{name}","employee_salary":"#{salary}","employee_age":"#{age}"`)
+  def responseId
+    @id = 0
+    begin
+      @id = JSON.parse(@response)["id"].to_i
+    rescue JSON::ParserError
+      STDERR.puts "The response cannot be parsed to a json object!"
+    end
+    @id
   end
 
 end
