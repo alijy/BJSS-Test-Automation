@@ -3,7 +3,6 @@ class DynamicLoadingPage
 
   EXAMPLE_2_LINK = "Example 2: Element rendered after the fact"
   START_BUTTON = "Start"
-  LOADING_ID = "#loading"
   FINISH_ID = "#finish"
 
 
