@@ -17,15 +17,21 @@ class DynamicLoadingPage
   end
 
   def isHelloWorldRendered?
-    timer = 0
-    while timer > 0 && !find(FINISH_ID)
+    isPresent?(FINISH_ID)
+  end
+
+  def isPresent?(element)
+    timer = 3
+    while timer > 0 do
+      begin
+        if find(element).visible?
+          break
+        end
+      rescue Capybara::ElementNotFound
+      end
       timer -= 1
     end
-    if timer == 0
-      return false
-    else
-      return true
-    end
+    (timer == 0) ? false : true
   end
 
 end

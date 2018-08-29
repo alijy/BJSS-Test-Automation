@@ -1,6 +1,8 @@
 require 'capybara'
 require 'capybara/dsl'
+require 'httparty'
 require_relative '../lib/the_internet_site'
+require_relative '../lib/dummy_restapi_site'
 
 RSpec.configure do |config|
   config.formatter = :documentation
