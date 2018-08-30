@@ -13,7 +13,6 @@ class DynamicLoadingPage
 
   def clickStart
     click_on(START_BUTTON)
-    sleep 3
   end
 
 
