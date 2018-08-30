@@ -13,7 +13,7 @@ Ruby, Capybara, RSpec
 
 Ruby gems: selenium-webdriver, capybacra, httparty and json
 
-I intentionally didn't use `cucumber`. It would be a better choice since it could lead to more efficient test generation and execution. However, it was not included in the tech stack provided in the problem description. For the future, I suggest **cucumber** is added to the tech stack.
+I intentionally didn't use **cucumber**. It would be a better choice since it could lead to more efficient test generation and execution. However, it was not included in the tech stack provided in the problem description. For future improvements, I suggest `cucumber` is added to the tech stack.
 
 
 ## Tests
@@ -31,8 +31,7 @@ For verification I decided to check for a valid Id in the response. I believe th
 ### Test 4 - Drag and Drop
 In order to automate the drag and drop functionality I used capybara's `drag_to` method. I tested both columns' labels to confirm that the dragged and dropped columns actually switch places. This is fairly obvious in this case since there is only 2 draggable elements available. In cases where there are more draggable elements on the page, it makes more sense to swap any 2 by dragging one to another (e.g. jigsaw puzzles). However, if the drag and drop action leads to a change in the order of the draggable elemens (e.g. Trello board), then testing the match between the dragged element and the current element at the dropped position would suffice.
 
+## Public Projects
 
-
-https://github.com/teamcapybara/capybara/issues/690
-
-http://www.obeythetestinggoat.com/how-to-get-selenium-to-wait-for-page-load-after-a-click.html
+Please have a look at my Github repositories
+[here](https://github.com/alijy?tab=repositories).
