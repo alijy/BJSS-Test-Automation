@@ -1,3 +1,5 @@
+# BJSS Test Automation
+
 ## How to setup and run the tests?
 
 Perform the following commands in order in the terminal:
