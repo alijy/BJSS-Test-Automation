@@ -13,7 +13,7 @@ Perform the following commands in order in the terminal:
 ## Tech
 Ruby, Capybara, RSpec
 
-Ruby gems: selenium-webdriver, capybacra, httparty and json
+Ruby gems: selenium-webdriver, capybara, httparty and json
 
 I intentionally didn't use **cucumber**. It would be a better choice since it could lead to more efficient test generation and execution. However, it was not included in the tech stack provided in the problem description. For future improvements, I suggest it is added to the tech stack.
 
