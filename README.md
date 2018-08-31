@@ -35,5 +35,4 @@ In order to automate the drag and drop functionality I used capybara's `drag_to`
 
 ## Public Projects
 
-Please have a look at my GitHub repositories
-[here](https://github.com/alijy?tab=repositories).
+Please visit my [GitHub repositories](https://github.com/alijy?tab=repositories).
